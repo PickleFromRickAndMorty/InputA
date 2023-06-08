@@ -1,0 +1,27 @@
+.input-window {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-window input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+}
+
+.input-window label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+.input-window input:focus + label,
+.input-window input:valid + label {
+  top: -20px;
+  font-size: 12px;
+  color: #666;
+}
